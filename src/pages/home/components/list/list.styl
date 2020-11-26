@@ -1,0 +1,47 @@
+@import ('../../../../stylus/index.styl');
+
+.list {
+    .listBox {
+        height: $ListBoxHeight;
+        display: flex;
+
+        .listBoxImg {
+            width: $ListBoxImgHeight;
+            height: $ListBoxImgHeight;
+            margin: $margin;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .listBoxCon {
+            height: 100%;
+            flex: 1;
+
+            h2 {
+                font-size: 0.16rem;
+                line-height: 0.32rem;
+                color: $font-333;
+            }
+
+            p {
+                font-size: 0.16rem;
+                line-height: 0.32rem;
+                color: #e23838;
+            }
+
+            .btn {
+                width: 1.5rem;
+                height: 0.5rem;
+                background: $primary;
+                color: $font-white;
+                text-align: center;
+                border-radius: 0.05rem;
+                font-size: 0.11rem;
+                line-height: 0.5rem;
+            }
+        }
+    }
+}

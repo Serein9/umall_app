@@ -1,0 +1,58 @@
+@import ('../../stylus/index.styl');
+
+.cate {
+    display: flex;
+
+    .leftNav {
+        width: 35%;
+        height: 100vh;
+        background: #fafafa;
+
+        div {
+            height: 0.8rem;
+            line-height: 0.8rem;
+            font-size: 0.3rem;
+            color: $font-666;
+            text-align: center;
+        }
+
+        .select {
+            color: $primary;
+        }
+    }
+
+    .rightBox {
+        flex: 1;
+        overflow: hidden;
+
+        .con {
+            width: 50%;
+            float: left;
+
+            .item {
+                height: 2rem;
+                position: relative;
+                overflow: hidden;
+                margin: $margin;
+                border-radius: $margin;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                div {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 0.3rem;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 0.3rem;
+                    color: $font-white;
+                    background: $primary;
+                }
+            }
+        }
+    }
+}

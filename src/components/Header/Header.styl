@@ -1,0 +1,37 @@
+@import ('../../stylus/index.styl');
+
+.header {
+    width: 100vw;
+    background: $primary;
+    height: $HeaderHeight;
+    line-height: $HeaderHeight;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .header-back {
+        position: absolute;
+        left: $margin-left;
+        top: 0;
+        color: $font-white;
+        font-size: $HeaderFontSize;
+        z-index: 2;
+    }
+
+    .header-title {
+        text-align: center;
+        color: $font-white;
+        font-size: $HeaderFontSize;
+        z-index: 1;
+    }
+
+    .header-register {
+        position: absolute;
+        right: $margin-right;
+        top: 0;
+        color: $font-white;
+        font-size: $HeaderFontSize;
+        z-index: 2;
+    }
+}

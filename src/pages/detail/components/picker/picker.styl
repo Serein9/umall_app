@@ -1,0 +1,72 @@
+@import ('../../../../stylus/index.styl');
+
+.picker {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    .con {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 60vh;
+        overflow-y: auto;
+        background: $font-white;
+
+        .imgBox {
+            width: 100%;
+            display: flex;
+
+            .img {
+                width: 2rem;
+                height: 2rem;
+
+                img {
+                    width: 100%;
+                    background: red;
+                    height: 100%;
+                }
+            }
+
+            .title {
+                flex: 1;
+                width: 100%;
+
+                h2 {
+                    font-size: 0.5rem;
+                    line-height: 1rem;
+                    color: $font-666;
+                    padding: $margin;
+                }
+            }
+        }
+
+        .attr {
+            height: 1rem;
+            line-height: 1rem;
+            font-size: 0.5rem;
+            margin: $margin;
+            color: $font-666;
+        }
+
+        .btns {
+            overflow: hidden;
+
+            span {
+                float: left;
+                padding: $padding $margin;
+                margin: $margin;
+                border: 0.01rem solid $font-666;
+            }
+
+            .select {
+                border: 0.01rem solid $primary;
+                color: $primary;
+            }
+        }
+    }
+}
